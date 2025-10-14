@@ -54,7 +54,7 @@
     "storybook": "catalog:",
     "tailwindcss": "catalog:",
     "typescript": "catalog:",
-    "@tanstack/nitro-v2-vite-plugin": "catalog:",
+    "nitro": "catalog:",
     "vite": "catalog:",
     "vitest": "catalog:",
     "@vitest/browser": "catalog:",
