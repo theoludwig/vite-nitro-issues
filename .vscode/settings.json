@@ -1,0 +1,39 @@
+{
+  "typescript.tsdk": "node_modules/typescript/lib",
+  "editor.bracketPairColorization.enabled": true,
+  "editor.wordWrap": "on",
+  "prettier.configPath": ".prettierrc.json",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": "explicit",
+    "source.organizeImports": "never"
+  },
+  "oxc.enable": true,
+  "oxc.typeAware": true,
+  "typescript.experimental.useTsgo": false,
+  "editor.quickSuggestions": {
+    "strings": "on"
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  },
+  "tailwindCSS.classFunctions": ["classNames"],
+  "tailwindCSS.experimental.configFile": "./src/styles.css",
+  "i18n-ally.localesPaths": ["./src/i18n/translations/"],
+  "i18n-ally.keystyle": "nested",
+  "i18n-ally.sortKeys": false,
+  "i18n-ally.sourceLanguage": "en-GB",
+  "i18n-ally.displayLanguage": "en-GB",
+  "i18n-ally.enabledFrameworks": ["next-intl", "general"],
+  "i18n-ally.extract.autoDetect": true,
+  "files.watcherExclude": {
+    "**/routeTree.gen.ts": true
+  },
+  "search.exclude": {
+    "**/routeTree.gen.ts": true
+  },
+  "files.readonlyInclude": {
+    "**/routeTree.gen.ts": true
+  }
+}

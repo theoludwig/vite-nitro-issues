@@ -1,0 +1,17 @@
+{
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "extends": ["node_modules/eslint-config-conventions/.oxlintrc.json"],
+  "ignorePatterns": ["**/routeTree.gen.ts", "src/router.tsx"],
+  "rules": {
+    "import-x/extensions": [
+      "error",
+      "ignorePackages",
+      {
+        "ts": "always",
+        "tsx": "always",
+        "js": "never",
+        "jsx": "never"
+      }
+    ]
+  }
+}

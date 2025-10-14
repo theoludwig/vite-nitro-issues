@@ -1,0 +1,22 @@
+@import "tailwindcss";
+@import "@fontsource/inter";
+
+@theme {
+  --font-sans: "Inter", sans-serif;
+}
+
+@layer base {
+  [type="search"]::-webkit-search-decoration,
+  [type="search"]::-webkit-search-cancel-button {
+    appearance: none;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+body {
+  @apply bg-white font-sans text-black;
+}

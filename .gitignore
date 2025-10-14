@@ -1,0 +1,68 @@
+# dependencies
+node_modules
+.npm
+.cache
+package-lock.json
+.pnpm-store
+.apt
+.pnp
+.pnp.js
+.yarn/install-state.gz
+
+# testing
+coverage
+
+# production
+.next/
+out/
+dist/
+build/
+.swc/
+.react-email/
+.output
+.vinxi
+/api/
+/server/build
+/public/build
+.vinxi
+.tanstack
+.nitro/
+
+# misc
+.DS_Store
+*.pem
+.turbo
+bin/
+dump_*
+.tmp/
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Storybook
+*storybook.log
+storybook-static
+
+# IDEs and editors
+.idea
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# local env files
+.env
+.env.dev
+.env.production
+.env*.local
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts

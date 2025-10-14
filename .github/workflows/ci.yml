@@ -1,0 +1,41 @@
+name: "CI"
+
+on:
+  push:
+    branches: [develop]
+  pull_request:
+    branches: [develop, main]
+
+jobs:
+  ci:
+    timeout-minutes: 30
+    runs-on: "ubuntu-latest"
+    env:
+      CI: "1"
+      TZ: "Europe/Paris"
+      DO_NOT_TRACK: "1"
+      TURBO_TELEMETRY_DISABLED: "1"
+      NEXT_TELEMETRY_DISABLED: "1"
+      STORYBOOK_DISABLE_TELEMETRY: "1"
+    steps:
+      - uses: "actions/checkout@v5.0.0"
+
+      - uses: "pnpm/action-setup@v4.1.0"
+
+      - name: "Setup Node.js"
+        uses: "actions/setup-node@v6.0.0"
+        with:
+          node-version: "24.x"
+          cache: "pnpm"
+
+      - name: "Install dependencies"
+        run: "pnpm install --frozen-lockfile"
+
+      - name: "Install Playwright"
+        run: "pnpm exec playwright install --with-deps"
+
+      - run: "node --run lint:typescript"
+      - run: "node --run lint:oxlint"
+      - run: "node --run lint:prettier"
+      - run: "node --run test"
+      - run: "node --run build"
