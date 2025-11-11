@@ -3,11 +3,11 @@ catalogMode: "strict"
 catalog:
   # TypeScript/Linting
   "typescript": "5.9.3"
-  "@types/node": "24.7.2"
+  "@types/node": "24.10.0"
   "@total-typescript/ts-reset": "0.6.1"
-  "oxlint": "1.23.0"
-  "oxlint-tsgolint": "0.2.0"
-  "eslint-config-conventions": "21.0.3"
+  "oxlint": "1.26.0"
+  "oxlint-tsgolint": "0.5.1"
+  "eslint-config-conventions": "21.1.0"
 
   # Utils
   "zod": "4.1.12"
@@ -15,45 +15,45 @@ catalog:
   # React.js/TanStack
   "react": "19.2.0"
   "react-dom": "19.2.0"
-  "@types/react": "19.2.2"
+  "@types/react": "19.2.3"
   "@types/react-dom": "19.2.2"
-  "@tanstack/react-start": "1.132.56"
-  "@tanstack/react-router": "1.132.47"
-  "@tanstack/react-router-devtools": "1.133.1"
-  "@tanstack/react-devtools": "0.7.6"
+  "@tanstack/react-start": "1.135.2"
+  "@tanstack/react-router": "1.135.2"
+  "@tanstack/react-router-devtools": "1.135.2"
+  "@tanstack/react-devtools": "0.8.1"
   "@tanstack/react-query-devtools": "5.90.2"
-  "@tanstack/react-query": "5.90.3"
-  "@tanstack/react-router-ssr-query": "1.132.47"
-  "nitro": "3.0.1-alpha.0"
-  "vite": "7.1.10"
-  "@vitejs/plugin-react": "5.0.4"
-  "use-intl": "4.3.12"
+  "@tanstack/react-query": "5.90.7"
+  "@tanstack/react-router-ssr-query": "1.135.2"
+  "nitro": "3.0.1-alpha.1"
+  "vite": "7.2.2"
+  "@vitejs/plugin-react": "5.1.0"
+  "use-intl": "4.5.1"
 
   # Storybook
-  "storybook": &storybook "9.1.10"
+  "storybook": &storybook "10.0.7"
   "@storybook/addon-a11y": *storybook
   "@storybook/addon-docs": *storybook
   "@storybook/addon-vitest": *storybook
   "@storybook/react-vite": *storybook
-  "@chromatic-com/storybook": "4.1.1"
+  "@chromatic-com/storybook": "4.1.2"
 
   # Vitest
-  "vitest": &vitest "3.2.4"
-  "@vitest/browser": *vitest
+  "vitest": &vitest "4.0.8"
+  "@vitest/browser-playwright": *vitest
   "@vitest/coverage-v8": *vitest
 
   # Playwright
-  "playwright": &playwright "1.56.0"
+  "playwright": &playwright "1.56.1"
   "@playwright/test": *playwright
 
   # Prettier
   "prettier": "3.6.2"
-  "prettier-plugin-tailwindcss": "0.7.0"
+  "prettier-plugin-tailwindcss": "0.7.1"
 
   # CSS
-  "@tailwindcss/vite": &tailwindcss "4.1.14"
+  "@tailwindcss/vite": &tailwindcss "4.1.17"
   "tailwindcss": *tailwindcss
-  "tailwind-merge": "3.3.1"
+  "tailwind-merge": "3.4.0"
   "clsx": "2.1.1"
   "@fontsource/inter": "5.2.8"
 
