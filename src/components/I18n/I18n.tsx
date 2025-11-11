@@ -2,6 +2,7 @@ import { useLocale, useTranslations } from "use-intl"
 import type { I18nLocale } from "../../i18n/i18n.ts"
 import { I18N_LOCALES } from "../../i18n/i18n.ts"
 import { classNames } from "../../utils/classNames.ts"
+import "../../i18n/i18n.server.ts"
 
 export interface I18nProps {
   onI18nChange: (locale: I18nLocale) => Promise<void>
